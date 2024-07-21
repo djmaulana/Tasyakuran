@@ -19,13 +19,13 @@ const Slideshow = () => {
         })
       })
   const images = [
-    '/1.jpg',
-    '/2.jpg',
-    '/3.jpg',
-    '/6.jpg',
-    '/7.jpg',
-    '/8.jpg',
-    '/9.jpg',
+    '/1.JPG',
+    '/2.JPG',
+    '/3.JPG',
+    '/6.JPG',
+    '/7.JPG',
+    '/8.JPG',
+    '/9.JPG',
 	
   ]
 

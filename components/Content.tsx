@@ -33,7 +33,7 @@ const Content = ({ title, content } : ContentProps) => {
         </p>
         <div className="text-center mt-3 " data-aos='zoom-in'>
           <Image 
-            src='/men.jpg'
+            src='/men.JPG'
             alt='men'
             width={200}
             height={50}
@@ -47,7 +47,7 @@ const Content = ({ title, content } : ContentProps) => {
         <p className='m-5'>&</p>
         <div className="text-center mt-3 " data-aos='zoom-in'>
           <Image 
-            src='/woman.jpg'
+            src='/woman.JPG'
             alt='men'
             width={200}
             height={30}

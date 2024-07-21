@@ -49,7 +49,7 @@ const Hero = () => {
     <div className="relative w-full h-screen ">
       <div className='absolute inset-0'>
         <Image
-          src="/hero.jpg"
+          src="/hero.JPG"
           alt="background image"
           layout="fill"
           objectFit="cover"

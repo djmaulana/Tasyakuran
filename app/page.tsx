@@ -48,7 +48,7 @@ const Home: FC = () => {
     <main className="overflow-hidden relative min-h-screen flex justify-center items-end">
       <div className='absolute inset-0'>
         <Image
-          src="/hero.jpg"
+          src="/hero.JPG"
           alt="background image"
           layout="fill"
           objectFit="cover"
