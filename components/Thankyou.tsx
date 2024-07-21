@@ -18,7 +18,7 @@ const Thankyou = () => {
     <div className='w-screen mt-5'>
         <div className='p-5 bg-black bg-opacity-90 h-4/5 text-center text-gray-400'>
             <Image
-                src='/3.jpg'
+                src='/3.JPG'
                 alt='img'
                 width={150}
                 height={50}

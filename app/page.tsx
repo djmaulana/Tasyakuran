@@ -55,7 +55,7 @@ const Home: FC = () => {
           className="w-full h-full"
         />
       </div>
-      <div className="relative z-10 flex flex-col p-5 text-left justify-center items-center h-full">
+      <div className="relative z-10 flex flex-col p-5 text-left mb-20 justify-center items-center h-full">
         {/* <Music /> */}
         <div className='bg-neutral-300 p-5 rounded-[25px] grid bg-opacity-50 text-center'>
           <h1 className="text-white">THE WEDDING OF</h1>
