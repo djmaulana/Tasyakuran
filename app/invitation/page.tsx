@@ -7,10 +7,10 @@ const roboto = Roboto({ weight: ["400", "700"], subsets: ["latin"] });
 const page = () => {
   return (
     <>
-        <div className="flex min-h-40 flex-col items-center justify-center bg-cover bg-center pt-5" style={{ backgroundImage: "url('/bg.png')" }}>
+        <div className="flex min-h-40 flex-col items-center justify-center bg-cover bg-center pt-5" >
             <div className="flex justify-center items-center">
                 <Image 
-                src='/hero-2.png'
+                src='/hero-5.png'
                 alt='bg-2.png'
                 width={500}
                 height={500}
@@ -18,7 +18,7 @@ const page = () => {
             </div>
         </div>
         <hr className='border-1 mx-5 border-gray-400 ' />
-        <div className="flex min-h-80 flex-col items-center justify-center bg-cover bg-center pt-5" style={{ backgroundImage: "url('/bg.png')" }}>
+        <div className="flex min-h-80 flex-col items-center justify-center bg-cover bg-center pt-5" >
             <div className="flex justify-center items-center">
                 <Image 
                 src='/hero-3.png'

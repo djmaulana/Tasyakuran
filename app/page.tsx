@@ -31,13 +31,13 @@ const Home: FC = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between py-5" style={{ backgroundImage: "url('/bg.png')" }}>
+    <div className="flex min-h-screen flex-col items-center justify-between py-5" >
       <div className={corinthia.className}>
         <h1 className="text-5xl mt-9 font-normal tracking-wide">Tasyakuran 7 Bulanan</h1>
       </div>
       <div className="mt-2">
         <Image 
-          src='/hero.png'
+          src='/hero-c.png'
           alt="Tasyakuran 7 Bulanan"
           width={600}
           height={400}
