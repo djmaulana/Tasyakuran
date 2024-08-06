@@ -4,29 +4,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Image from 'next/image';
 import { useEffect, useRef, useState, FC } from 'react';
-import { Alex_Brush } from 'next/font/google';
+import { Corinthia, Roboto } from 'next/font/google';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 // ..
 
-const alex = Alex_Brush({ weight: '400', preload: false });
+const corinthia = Corinthia({ weight: '400', preload: false });
+const roboto = Roboto({ weight: '400', preload: false });
 
-// Ninda Aliyanda
-// Dede Saepul Dina
 
 const Home: FC = () => {
-  const searchParams = useSearchParams();
-  let namaTamu = searchParams.get('guest');
-  if (namaTamu != null) {
-    namaTamu = namaTamu.replace(/-/g, ' ');
-  }
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
-  }, []);
   const [isPlaying, setIsPlaying] = useState(false);
   const audio = useRef<HTMLAudioElement | undefined>(
     typeof Audio !== "undefined" ? new Audio("audio/music.mp3") : undefined
@@ -45,40 +31,27 @@ const Home: FC = () => {
   };
 
   return (
-    <main className="overflow-hidden relative min-h-screen flex justify-center items-end">
-      <div className='absolute inset-0'>
-        <Image
-          src="/hero.JPG"
-          alt="background image"
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
+    <div className="flex min-h-screen flex-col items-center justify-between py-5" style={{ backgroundImage: "url('/bg.png')" }}>
+      <div className={corinthia.className}>
+        <h1 className="text-5xl mt-9 font-normal tracking-wide">Tasyakuran 7 Bulanan</h1>
+      </div>
+      <div className="mt-2">
+        <Image 
+          src='/hero.png'
+          alt="Tasyakuran 7 Bulanan"
+          width={600}
+          height={400}
+          className="mx-auto" 
         />
       </div>
-      <div className="relative z-10 flex flex-col p-5 text-left mb-20 justify-center items-center h-full">
-        {/* <Music /> */}
-        <div className='bg-neutral-300 p-5 rounded-[25px] grid bg-opacity-50 text-center'>
-          <h1 className="text-white">THE WEDDING OF</h1>
-          <div className={alex.className}>
-            <h1 className='text-[40px] md:text-[120px] text-white'>
-              Sabrina & Naba
-            </h1>
-          </div>
-          <p className='capitalize  text-lg text-white'>{namaTamu}</p>
-          <div>
-            <div className="">
-              <Link
-                href='/invitation'
-              >
-                <button onClick={handleMusic} className="bg-[#474747] mt-[10px] py-2 px-3 rounded-full w-40 text-center text-white text-[13px]">
-                  Buka Undangan
-                </button>
-              </Link>
-            </div>
-          </div>
+      <Link href="/invitation">
+        <div className={roboto.className}>
+          <button onClick={handleMusic} className="bg-[#DF7CA7] text-white py-2 px-6 mb-6 rounded-lg">
+            Buka Undangan
+          </button>
         </div>
-      </div>
-    </main>
+      </Link>
+    </div>
   );
 }
 
